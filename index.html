@@ -1,0 +1,826 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top Up Game - Free Fire, Mobile Legends, Valorant, PUBG</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8f9fa;
+        }
+        
+        .game-card {
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+        
+        .game-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+        }
+        
+        .price-item {
+            transition: all 0.2s ease;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        
+        .price-item:hover {
+            background-color: #f3f4f6;
+        }
+        
+        .btn-buy {
+            transition: all 0.2s ease;
+            background: linear-gradient(135deg, #3b82f6, #1d4ed8);
+        }
+        
+        .btn-buy:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(59, 130, 246, 0.3);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover::after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-6 shadow-lg">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="flex items-center mb-4 md:mb-0">
+                    <i class="fas fa-gamepad text-3xl mr-3"></i>
+                    <h1 class="text-2xl md:text-3xl font-bold">GamingTopUp</h1>
+                </div>
+                <nav class="flex space-x-6">
+                    <a href="#freefire" class="nav-link">Free Fire</a>
+                    <a href="#mlbb" class="nav-link">Mobile Legends</a>
+                    <a href="#valorant" class="nav-link">Valorant</a>
+                    <a href="#pubg" class="nav-link">PUBG</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-blue-50 py-16">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-blue-800 mb-4">Top Up Game Termurah & Terpercaya</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto mb-8">
+                Isi diamond, UC, dan item game favorit Anda dengan harga termurah dan proses instan!
+            </p>
+            <div class="flex justify-center space-x-4">
+                <a href="https://wa.me/6283874806543?text=Halo,%20saya%20ingin%20bertanya%20tentang%20top%20up%20game" 
+                   class="bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-full font-medium flex items-center">
+                    <i class="fab fa-whatsapp mr-2"></i> Hubungi Kami
+                </a>
+                <a href="#freefire" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-medium">
+                    Lihat Harga
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Free Fire Section -->
+    <section id="freefire" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-10">
+                <img src="https://img.icons8.com/color/48/000000/free-fire.png" alt="Free Fire" class="mr-3">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Free Fire Top Up</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Free Fire Diamond 5 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">5 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">5 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 1.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">12 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 2.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">50 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 5.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">70 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 7.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">140 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 14.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Free%20Fire" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Free Fire Diamond 355 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">355 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">355 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 35.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">720 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 70.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">1075 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 100.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">1440 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 140.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">2000 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 200.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Free%20Fire" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Free Fire Diamond 4000 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-400 to-yellow-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">4000 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">4000 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 400.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">7200 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 700.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">10000 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 1.000.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Member Mingguan</span>
+                            <span class="font-bold text-blue-600">Rp 30.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Member Bulanan</span>
+                            <span class="font-bold text-blue-600">Rp 150.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Free%20Fire" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mobile Legends Section -->
+    <section id="mlbb" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-10">
+                <img src="https://img.icons8.com/color/48/000000/mobile-legend.png" alt="Mobile Legends" class="mr-3">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Mobile Legends Top Up</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- MLBB Diamond 5 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-500 to-red-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">5 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">5 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 1.500</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">12 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 3.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">28 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 7.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">36 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 9.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">53 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 13.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Mobile%20Legends" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MLBB Diamond 86 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-500 to-red-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">86 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">86 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 21.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">170 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 42.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">257 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 63.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">344 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 84.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">429 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 105.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Mobile%20Legends" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- MLBB Diamond 514 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-500 to-red-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">514 Diamond</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">514 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 126.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">706 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 168.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">1412 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 336.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">2195 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 525.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">3688 Diamond</span>
+                            <span class="font-bold text-blue-600">Rp 880.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Diamond%20Mobile%20Legends" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Valorant Section -->
+    <section id="valorant" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-10">
+                <img src="https://img.icons8.com/color/48/000000/valorant.png" alt="Valorant" class="mr-3">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">Valorant Top Up</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Valorant Points 125 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">125 VP</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">125 VP</span>
+                            <span class="font-bold text-blue-600">Rp 15.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">250 VP</span>
+                            <span class="font-bold text-blue-600">Rp 30.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">500 VP</span>
+                            <span class="font-bold text-blue-600">Rp 60.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">750 VP</span>
+                            <span class="font-bold text-blue-600">Rp 90.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">1000 VP</span>
+                            <span class="font-bold text-blue-600">Rp 120.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20VP%20Valorant" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Valorant Points 2050 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">2050 VP</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">2050 VP</span>
+                            <span class="font-bold text-blue-600">Rp 240.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">3675 VP</span>
+                            <span class="font-bold text-blue-600">Rp 420.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">5350 VP</span>
+                            <span class="font-bold text-blue-600">Rp 600.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">11000 VP</span>
+                            <span class="font-bold text-blue-600">Rp 1.200.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Premium Skin Bundle</span>
+                            <span class="font-bold text-blue-600">Rp 350.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20VP%20Valorant" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Valorant Battle Pass -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-red-400 to-red-600 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">Battle Pass</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Battle Pass Standar</span>
+                            <span class="font-bold text-blue-600">Rp 150.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Battle Pass Premium</span>
+                            <span class="font-bold text-blue-600">Rp 250.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Radianite Points 20</span>
+                            <span class="font-bold text-blue-600">Rp 50.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Radianite Points 40</span>
+                            <span class="font-bold text-blue-600">Rp 90.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Radianite Points 80</span>
+                            <span class="font-bold text-blue-600">Rp 170.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Battle%20Pass%20Valorant" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PUBG Section -->
+    <section id="pubg" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center mb-10">
+                <img src="https://img.icons8.com/color/48/000000/pubg.png" alt="PUBG" class="mr-3">
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-800">PUBG Mobile Top Up</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- PUBG UC 60 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">60 UC</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">60 UC</span>
+                            <span class="font-bold text-blue-600">Rp 10.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">180 UC</span>
+                            <span class="font-bold text-blue-600">Rp 30.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">360 UC</span>
+                            <span class="font-bold text-blue-600">Rp 60.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">720 UC</span>
+                            <span class="font-bold text-blue-600">Rp 120.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">1200 UC</span>
+                            <span class="font-bold text-blue-600">Rp 200.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20UC%20PUBG" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PUBG UC 2400 -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">2400 UC</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">2400 UC</span>
+                            <span class="font-bold text-blue-600">Rp 400.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">4000 UC</span>
+                            <span class="font-bold text-blue-600">Rp 650.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">6000 UC</span>
+                            <span class="font-bold text-blue-600">Rp 900.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">8000 UC</span>
+                            <span class="font-bold text-blue-600">Rp 1.200.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">12000 UC</span>
+                            <span class="font-bold text-blue-600">Rp 1.800.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20UC%20PUBG" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- PUBG Special Items -->
+                <div class="game-card bg-white">
+                    <div class="bg-gradient-to-r from-yellow-500 to-yellow-700 py-4 px-6">
+                        <h3 class="text-xl font-bold text-white">Special Items</h3>
+                    </div>
+                    <div class="p-6">
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Royale Pass</span>
+                            <span class="font-bold text-blue-600">Rp 150.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Elite Royale Pass</span>
+                            <span class="font-bold text-blue-600">Rp 300.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Mythic Set</span>
+                            <span class="font-bold text-blue-600">Rp 500.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Legendary Skin</span>
+                            <span class="font-bold text-blue-600">Rp 750.000</span>
+                        </div>
+                        <div class="price-item py-3 flex justify-between items-center">
+                            <span class="text-gray-600">Airdrop Bundle</span>
+                            <span class="font-bold text-blue-600">Rp 1.000.000</span>
+                        </div>
+                        <div class="mt-6">
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Item%20Khusus%20PUBG" 
+                               class="btn-buy text-white w-full py-3 rounded-lg font-medium flex items-center justify-center">
+                                <i class="fas fa-shopping-cart mr-2"></i> Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12">Apa Kata Pelanggan Kami</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Andi Pratama</h4>
+                            <div class="flex text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">
+                        "Top up di sini sangat cepat prosesnya, hanya 5 menit diamond ML saya sudah masuk. Harga juga lebih murah dibanding tempat lain. Recommended banget!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Siti Rahayu</h4>
+                            <div class="flex text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">
+                        "Pertama kali beli UC PUBG di sini, awalnya ragu tapi ternyata aman dan cepat. Adminnya ramah banget, mau jelasin detailnya. Pokoknya puas!"
+                    </p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-blue-700 p-6 rounded-lg">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-500 rounded-full w-12 h-12 flex items-center justify-center">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold">Budi Santoso</h4>
+                            <div class="flex text-yellow-300">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-blue-100">
+                        "Sudah beberapa kali beli VP Valorant di sini, selalu puas dengan pelayanannya. Proses cepat dan harga bersaing. Bakal langganan terus nih."
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-2xl md:text-3xl font-bold text-center mb-12 text-gray-800">Pertanyaan yang Sering Ditanyakan</h2>
+            
+            <div class="max-w-3xl mx-auto">
+                <!-- FAQ 1 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2 flex items-center">
+                        <i class="fas fa-question-circle mr-3"></i> Berapa lama proses top up biasanya?
+                    </h3>
+                    <p class="text-gray-600">
+                        Proses top up biasanya memakan waktu 5-15 menit setelah pembayaran dikonfirmasi. Untuk pembelian di atas jam 10 malam, proses mungkin memakan waktu lebih lama.
+                    </p>
+                </div>
+                
+                <!-- FAQ 2 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2 flex items-center">
+                        <i class="fas fa-question-circle mr-3"></i> Metode pembayaran apa saja yang tersedia?
+                    </h3>
+                    <p class="text-gray-600">
+                        Kami menerima pembayaran melalui transfer bank (BCA, BRI, Mandiri, BNI), e-wallet (DANA, OVO, Gopay, LinkAja), serta minimarket (Alfamart, Indomaret).
+                    </p>
+                </div>
+                
+                <!-- FAQ 3 -->
+                <div class="mb-6 border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2 flex items-center">
+                        <i class="fas fa-question-circle mr-3"></i> Bagaimana jika diamond/UC/VP tidak masuk?
+                    </h3>
+                    <p class="text-gray-600">
+                        Jika dalam 30 menit item belum masuk, silakan hubungi kami via WhatsApp dengan menyertakan bukti transfer. Kami akan memprosesnya secepat mungkin.
+                    </p>
+                </div>
+                
+                <!-- FAQ 4 -->
+                <div class="mb-6">
+                    <h3 class="text-xl font-semibold text-blue-600 mb-2 flex items-center">
+                        <i class="fas fa-question-circle mr-3"></i> Apakah ada bonus untuk pembelian dalam jumlah besar?
+                    </h3>
+                    <p class="text-gray-600">
+                        Ya! Untuk pembelian di atas Rp 500.000, Anda akan mendapatkan bonus 5% dari nilai pembelian. Pembelian di atas Rp 1.000.000 mendapatkan bonus 10%.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-blue-800 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-2xl md:text-3xl font-bold mb-6">Siap Top Up Game Favorit Anda?</h2>
+            <p class="text-lg mb-8 max-w-2xl mx-auto">
+                Dapatkan diamond, UC, dan VP dengan harga termurah dan proses tercepat. Hubungi kami sekarang juga!
+            </p>
+            <a href="https://wa.me/6283874806543?text=Halo,%20saya%20ingin%20top%20up%20game" 
+               class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg inline-flex items-center">
+                <i class="fab fa-whatsapp mr-3 text-xl"></i> WhatsApp Sekarang
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4 flex items-center">
+                        <i class="fas fa-gamepad mr-2"></i> GamingTopUp
+                    </h3>
+                    <p class="text-gray-400">
+                        Penyedia layanan top up game termurah dan terpercaya di Indonesia. Melayani dengan cepat dan aman sejak 2020.
+                    </p>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Menu Cepat</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#freefire" class="text-gray-400 hover:text-white">Free Fire</a></li>
+                        <li><a href="#mlbb" class="text-gray-400 hover:text-white">Mobile Legends</a></li>
+                        <li><a href="#valorant" class="text-gray-400 hover:text-white">Valorant</a></li>
+                        <li><a href="#pubg" class="text-gray-400 hover:text-white">PUBG</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Hubungi Kami</h3>
+                    <ul class="space-y-2">
+                        <li class="flex items-center">
+                            <i class="fab fa-whatsapp mr-2 text-green-400"></i>
+                            <a href="https://wa.me/6283874806543" class="text-gray-400 hover:text-white">6283874806543</a>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-2 text-blue-400"></i>
+                            <span class="text-gray-400">cs@gamingtopup.com</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-map-marker-alt mr-2 text-red-400"></i>
+                            <span class="text-gray-400">Jakarta, Indonesia</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <!-- Social Media -->
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Media Sosial</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-blue-600 hover:bg-blue-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="bg-pink-600 hover:bg-pink-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="bg-blue-400 hover:bg-blue-500 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="bg-red-600 hover:bg-red-700 w-10 h-10 rounded-full flex items-center justify-center">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                    <div class="mt-6">
+                        <h4 class="font-medium mb-2">Jam Operasional</h4>
+                        <p class="text-gray-400 text-sm">
+                            Senin - Minggu<br>
+                            08.00 - 22.00 WIB
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500">
+                <p>&copy; 2023 GamingTopUp. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating WhatsApp Button -->
+    <a href="https://wa.me/6283874806543?text=Halo,%20saya%20ingin%20top%20up%20game" 
+       class="fixed bottom-6 right-6 bg-green-500 text-white w-14 h-14 rounded-full flex items-center justify-center shadow-lg hover:bg-green-600 z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+        
+        // Animation on scroll
+        const observerOptions = {
+            threshold: 0.1
+        };
+        
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+        
+        document.querySelectorAll('.game-card').forEach(card => {
+            observer.observe(card);
+        });
+    </script>
+</body>
+</html>
