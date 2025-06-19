@@ -107,40 +107,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flash Sale PUBG</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <style>
-        @keyframes pulse {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.05); }
-        }
-        .flash-pulse {
-            animation: pulse 1.5s infinite;
-        }
-        .discount-badge {
-            position: absolute;
-            top: -10px;
-            right: -10px;
-            background: #ef4444;
-            color: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-        }
-    </style>
-</head>
-<body class="bg-gray-100">
-   <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flash Sale PUBG Mobile</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -183,6 +149,9 @@
             cursor: not-allowed;
             pointer-events: none;
         }
+        .flash-ended {
+            border-color: #d1d5db !important;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -195,7 +164,7 @@
                     <h3 class="text-xl font-bold text-white uppercase flex items-center">
                         <i class="fas fa-bolt mr-2"></i> Flash Sale PUBG Mobile
                     </h3>
-                    <p class="text-yellow-200 text-xs mt-1" id="time-message">Berakhir pukul 14:30 hari ini</p>
+                    <p class="text-yellow-200 text-xs mt-1" id="time-message">Berakhir pukul 18:00 hari ini</p>
                 </div>
                 
                 <!-- Countdown Timer -->
@@ -218,62 +187,13 @@
             </div>
             
             <!-- Sale Items -->
-            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="sale-items">
-                <!-- Item 1 -->
-                <div class="sale-item bg-gray-50 rounded-lg p-4 relative border-2 border-red-300 hover:border-red-500 transition-all duration-300 flash-pulse">
-                    <div class="discount-badge">-70%</div>
-                    <div class="sold-badge">Terjual 250+</div>
-                    <div class="flex items-center mb-3">
-                        <div class="w-12 h-12 bg-yellow-100 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-crown text-yellow-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Royale Pass+</h4>
-                            <p class="text-xs text-gray-500">Season 26 Ultimate</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <span class="line-through text-gray-400 text-sm">Rp 300.000</span>
-                            <span class="block text-red-600 font-bold">Rp 90.000</span>
-                        </div>
-                        <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Royale%20Pass+%20Season%2026%20seharga%20Rp%2090.000" class="btn-buy bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-full text-xs transition inline-block">
-                            Beli Sekarang
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Item 2 -->
-                <div class="sale-item bg-gray-50 rounded-lg p-4 relative border-2 border-blue-300 hover:border-blue-500 transition-all duration-300 flash-pulse">
-                    <div class="discount-badge">-50%</div>
-                    <div class="sold-badge">Terjual 180+</div>
-                    <div class="flex items-center mb-3">
-                        <div class="w-12 h-12 bg-blue-100 rounded-full flex items-center justify-center mr-3">
-                            <i class="fas fa-tshirt text-blue-600 text-xl"></i>
-                        </div>
-                        <div>
-                            <h4 class="font-bold">Legendary Skin Set</h4>
-                            <p class="text-xs text-gray-500">Pistol + Karakter</p>
-                        </div>
-                    </div>
-                    <div class="flex justify-between items-center">
-                        <div>
-                            <span class="line-through text-gray-400 text-sm">Rp 1.200.000</span>
-                            <span class="block text-red-600 font-bold">Rp 600.000</span>
-                        </div>
-                        <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20Legendary%20Skin%20Set%20(Pistol%20+%20Karakter)%20seharga%20Rp%20600.000" class="btn-buy bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-full text-xs transition inline-block">
-                            Beli Sekarang
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- (Items 3-10 tetap sama seperti sebelumnya) -->
-                <!-- ... -->
+            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4" id="sale-items">
+                <!-- Products will be inserted here by JavaScript -->
             </div>
             
-            <!-- Tombol Lihat Semua Flash Sale -->
+            <!-- View All Button -->
             <div class="px-6 pb-6">
-                <a href="katalog.html" class="btn-view-all block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <a href="https://wa.me/6283874806543?text=Saya%20ingin%20melihat%20semua%20barang%20Flash%20Sale%20PUBG" class="btn-view-all block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
                     <i class="fas fa-arrow-right mr-2"></i> Lihat Semua Barang Flash Sale
                 </a>
             </div>
@@ -281,28 +201,94 @@
     </div>
 
     <script>
+        // Data produk flash sale (3 produk utama)
+        const products = [
+            {
+                id: 1,
+                name: "Royale Pass+",
+                description: "Season 26 Ultimate",
+                originalPrice: "300.000",
+                discountPrice: "90.000",
+                discount: "-70%",
+                sold: "250+",
+                icon: "fas fa-crown",
+                iconColor: "yellow",
+                borderColor: "red"
+            },
+            {
+                id: 2,
+                name: "Legendary Skin Set",
+                description: "Pistol + Karakter",
+                originalPrice: "1.200.000",
+                discountPrice: "600.000",
+                discount: "-50%",
+                sold: "180+",
+                icon: "fas fa-tshirt",
+                iconColor: "blue",
+                borderColor: "blue"
+            },
+            {
+                id: 3,
+                name: "Airdrop Bundle",
+                description: "5x Airdrop Premium",
+                originalPrice: "900.000",
+                discountPrice: "315.000",
+                discount: "-65%",
+                sold: "300+",
+                icon: "fas fa-parachute-box",
+                iconColor: "green",
+                borderColor: "green"
+            }
+        ];
+
+        // Render produk ke dalam HTML
+        function renderProducts() {
+            const container = document.getElementById('sale-items');
+            container.innerHTML = '';
+            
+            products.forEach(product => {
+                container.innerHTML += `
+                    <div class="sale-item bg-gray-50 rounded-lg p-4 relative border-2 border-${product.borderColor}-300 hover:border-${product.borderColor}-500 transition-all duration-300 flash-pulse">
+                        <div class="discount-badge">${product.discount}</div>
+                        <div class="sold-badge">Terjual ${product.sold}</div>
+                        <div class="flex items-center mb-3">
+                            <div class="w-12 h-12 bg-${product.iconColor}-100 rounded-full flex items-center justify-center mr-3">
+                                <i class="${product.icon} text-${product.iconColor}-600 text-xl"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold">${product.name}</h4>
+                                <p class="text-xs text-gray-500">${product.description}</p>
+                            </div>
+                        </div>
+                        <div class="flex justify-between items-center">
+                            <div>
+                                <span class="line-through text-gray-400 text-sm">Rp ${product.originalPrice}</span>
+                                <span class="block text-red-600 font-bold">Rp ${product.discountPrice}</span>
+                            </div>
+                            <a href="https://wa.me/6283874806543?text=Saya%20ingin%20membeli%20${encodeURIComponent(product.name)}%20(${encodeURIComponent(product.description)})%20seharga%20Rp%20${product.discountPrice.replace('.','')}" 
+                               class="btn-buy bg-red-500 hover:bg-red-600 text-white px-3 py-1 rounded-full text-xs transition inline-block">
+                                Beli Sekarang
+                            </a>
+                        </div>
+                    </div>
+                `;
+            });
+        }
+
         // Fungsi untuk mengatur waktu akhir (jam 18:00 hari ini)
         function setEndTime(hours, minutes) {
-            const now = new Date();
             const endTime = new Date();
-            
-            // Set jam dan menit untuk waktu akhir
             endTime.setHours(hours, minutes, 0, 0);
-            
-            // Jika waktu akhir sudah lewat hari ini, set untuk besok
-            if (endTime < now) {
-                endTime.setDate(endTime.getDate() + 1);
-            }
-            
             return endTime;
         }
 
-        // Waktu akhir flash sale (jam 18:00)
-        const endTime = setEndTime(14, 20);
+        // Waktu akhir flash sale (jam 18:00 hari ini saja)
+        const endTime = setEndTime(14, 40);
         let saleEnded = false;
 
         // Fungsi untuk menonaktifkan semua tombol beli
         function disableBuyButtons() {
+            // Nonaktifkan tombol "Beli Sekarang"
             const buyButtons = document.querySelectorAll('.btn-buy');
             buyButtons.forEach(button => {
                 button.textContent = 'Produk Sudah Tidak Tersedia!!';
@@ -317,12 +303,31 @@
             viewAllButton.classList.remove('from-yellow-400', 'to-orange-500', 'hover:from-yellow-500', 'hover:to-orange-600');
             viewAllButton.classList.add('bg-gray-400', 'btn-disabled');
             viewAllButton.removeAttribute('href');
+
+            // Ubah border item menjadi abu-abu
+            document.querySelectorAll('.sale-item').forEach(item => {
+                const colors = ['red', 'blue', 'green'];
+                colors.forEach(color => {
+                    item.classList.remove(`border-${color}-300`, `hover:border-${color}-500`);
+                });
+                item.classList.add('flash-ended');
+            });
+
+            // Matikan animasi pulse
+            document.querySelectorAll('.flash-pulse').forEach(el => {
+                el.style.animation = 'none';
+            });
         }
 
         // Fungsi untuk memperbarui countdown setiap detik
         function updateCountdown() {
             const now = new Date();
             let timeRemaining = Math.max(0, Math.floor((endTime - now) / 1000));
+
+            // Jika waktu sudah lewat (termasuk jika sudah hari berikutnya)
+            if (now > endTime) {
+                timeRemaining = 0;
+            }
 
             const hours = Math.floor(timeRemaining / 3600);
             const minutes = Math.floor((timeRemaining % 3600) / 60);
@@ -338,22 +343,22 @@
                 document.querySelector('.flash-timer').innerHTML = '<span class="text-xl font-bold">FLASH SALE BERAKHIR!</span>';
                 document.getElementById('time-message').textContent = 'Flash Sale telah berakhir';
                 
-                // Matikan animasi pulse
-                document.querySelectorAll('.flash-pulse').forEach(el => {
-                    el.style.animation = 'none';
-                });
-                
                 // Nonaktifkan tombol beli
                 disableBuyButtons();
                 saleEnded = true;
             }
         }
 
-        // Mulai countdown
-        const countdownInterval = setInterval(updateCountdown, 1000);
-        
-        // Cek langsung saat halaman dimuat
-        updateCountdown();
+        // Inisialisasi
+        document.addEventListener('DOMContentLoaded', () => {
+            renderProducts();
+            
+            // Mulai countdown
+            const countdownInterval = setInterval(updateCountdown, 1000);
+            
+            // Cek langsung saat halaman dimuat
+            updateCountdown();
+        });
     </script>
 </body>
 </html>
