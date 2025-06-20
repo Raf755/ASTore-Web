@@ -288,25 +288,11 @@
                 disableBuyButtons();
             }
 
-            function disableBuyButtons() {
-                document.querySelectorAll('.btn-buy').forEach(button => {
-                    button.textContent = 'Produk Sudah Tidak Tersedia!!';
-                    button.classList.remove('bg-red-500', 'hover:bg-red-600');
-                    button.classList.add('bg-gray-400', 'btn-disabled');
-                    button.removeAttribute('href');
-                });
 
-                const viewAllButton = document.querySelector('.btn-view-all');
-                viewAllButton.textContent = 'Flash Sale Telah Berakhir';
-                viewAllButton.classList.remove('from-yellow-400', 'to-orange-500');
-                viewAllButton.classList.add('bg-gray-400', 'btn-disabled');
-                viewAllButton.removeAttribute('href');
 
-                document.querySelectorAll('.flash-pulse').forEach(el => {
-                    el.style.animation = 'none';
-                    el.classList.remove('border-red-300', 'border-blue-300', 'border-green-300');
-                    el.classList.add('flash-ended');
-                });
+
+
+            
             }
         }
     </script>
