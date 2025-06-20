@@ -33,18 +33,6 @@
     </style>
 </head>
 <body class="bg-gray-100">
-    <!-- Header with Logo -->
-    <div class="bg-white shadow-md">
-        <div class="container mx-auto px-4 py-4 flex items-center justify-between">
-            <div class="flex items-center space-x-3">
-                <img src="https://i.ibb.co/0nN4sJ5/pubg-logo.png" alt="PUBG Logo" class="h-10 w-10">
-                <h1 class="text-2xl font-bold header-logo">PUBG MOBILE SHOP</h1>
-            </div>
-            <div class="text-sm text-gray-600">
-                <i class="fas fa-headset mr-1"></i> Customer Service: 6281-2345-6789
-            </div>
-        </div>
-    </div>
 
     <!-- Flash Sale Section -->
     <div class="container mx-auto px-4 py-8">
@@ -54,7 +42,6 @@
                     FLASH SALE SPESIAL!
                 </span>
             </h2>
-            <p class="text-gray-600">Diskon hingga 70% untuk item PUBG Mobile terbaik</p>
         </div>
 
         <div class="flash-sale bg-white rounded-xl overflow-hidden shadow-lg mb-6 relative">
@@ -88,40 +75,23 @@
                 </div>
             </div>
             
-            <!-- Sale Items (3 featured products) -->
-            <div class="p-6 grid grid-cols-1 sm:grid-cols-3 gap-4" id="sale-items">
+            <!-- Sale Items (10 products) -->
+            <div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4" id="sale-items">
                 <!-- Products will be inserted here by JavaScript -->
-            </div>
-            
-            <!-- View All Button -->
-            <div class="px-6 pb-6 text-center">
-                <a id="view-all-button" href="https://example.com/flash-sale" class="btn-view-all inline-block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
-                    <i class="fas fa-arrow-right mr-2"></i> Lihat Semua Produk Flash Sale
-                </a>
             </div>
         </div>
     </div>
 
-    <!-- Footer -->
-    <div class="bg-gray-800 text-white py-6">
-        <div class="container mx-auto px-4 text-center">
-            <p class="text-sm mb-2">© 2023 PUBG Mobile Shop. All rights reserved.</p>
-            <div class="flex justify-center space-x-4">
-                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-facebook"></i></a>
-                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="text-gray-300 hover:text-white"><i class="fab fa-whatsapp"></i></a>
-            </div>
-        </div>
-    </div>
+
 
     <script>
         // Configuration - Set your desired end time here (24-hour format)
         const config = {
-            endHour: 19,    // Set end hour (e.g., 16 for 4 PM)
-            endMinute: 04    // Set end minute (e.g., 30 for :30)
+            endHour: 16,    // Set end hour (e.g., 16 for 4 PM)
+            endMinute: 0    // Set end minute (e.g., 30 for :30)
         };
 
-        // 3 Featured PUBG Mobile Products
+        // 10 Featured PUBG Mobile Products
         const products = [
             {
                 id: 1, name: "Royale Pass+", 
@@ -143,6 +113,55 @@
                 originalPrice: "900.000", discountPrice: "315.000",
                 discount: "-65%", sold: "300+",
                 icon: "fas fa-parachute-box", iconColor: "green", borderColor: "green"
+            },
+            {
+                id: 4, name: "Vehicle Skin Mythic",
+                description: "UAZ Armored",
+                originalPrice: "800.000", discountPrice: "320.000",
+                discount: "-60%", sold: "150+",
+                icon: "fas fa-car", iconColor: "purple", borderColor: "purple"
+            },
+            {
+                id: 5, name: "Helm Legendary",
+                description: "Level 3 Elite",
+                originalPrice: "750.000", discountPrice: "337.500",
+                discount: "-55%", sold: "120+",
+                icon: "fas fa-helmet-battle", iconColor: "orange", borderColor: "orange"
+            },
+            {
+                id: 6, name: "M416 Glacier",
+                description: "Upgradeable Skin",
+                originalPrice: "1.500.000", discountPrice: "825.000",
+                discount: "-45%", sold: "210+",
+                icon: "fas fa-gun", iconColor: "pink", borderColor: "pink"
+            },
+            {
+                id: 7, name: "UC Package",
+                description: "10.000 UC + Bonus",
+                originalPrice: "1.200.000", discountPrice: "840.000",
+                discount: "-30%", sold: "85+",
+                icon: "fas fa-coins", iconColor: "indigo", borderColor: "indigo"
+            },
+            {
+                id: 8, name: "Crate Bundle",
+                description: "10x Elite Crates",
+                originalPrice: "500.000", discountPrice: "300.000",
+                discount: "-40%", sold: "110+",
+                icon: "fas fa-box-open", iconColor: "teal", borderColor: "teal"
+            },
+            {
+                id: 9, name: "Voice Pack Pro",
+                description: "Exclusive Effects",
+                originalPrice: "350.000", discountPrice: "227.500",
+                discount: "-35%", sold: "65+",
+                icon: "fas fa-headset", iconColor: "amber", borderColor: "amber"
+            },
+            {
+                id: 10, name: "Achievement Set",
+                description: "Frame + Badge",
+                originalPrice: "400.000", discountPrice: "300.000",
+                discount: "-25%", sold: "50+",
+                icon: "fas fa-medal", iconColor: "cyan", borderColor: "cyan"
             }
         ];
 
@@ -217,12 +236,6 @@
                 document.querySelector('.flash-timer').innerHTML = '<span class="text-xl font-bold">FLASH SALE BERAKHIR!</span>';
                 document.getElementById('time-message').textContent = 'Flash Sale telah berakhir';
                 
-                // Change the view all button text and disable it
-                const viewAllButton = document.getElementById('view-all-button');
-                viewAllButton.textContent = 'Flash Sale Sudah Berakhir';
-                viewAllButton.classList.add('btn-disabled');
-                viewAllButton.removeAttribute('href');
-
                 // Remove pulse animation when sale ends
                 document.querySelectorAll('.flash-pulse').forEach(el => {
                     el.style.animation = 'none';
