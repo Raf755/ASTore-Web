@@ -27,6 +27,9 @@
             -webkit-text-fill-color: transparent;
             font-weight: 900;
         }
+        .btn-disabled {
+            opacity: 0.6; cursor: not-allowed; pointer-events: none;
+        }
     </style>
 </head>
 <body class="bg-gray-100">
@@ -92,7 +95,7 @@
             
             <!-- View All Button -->
             <div class="px-6 pb-6 text-center">
-                <a href="https://example.com/flash-sale" class="btn-view-all inline-block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
+                <a id="view-all-button" href="https://example.com/flash-sale" class="btn-view-all inline-block text-center bg-gradient-to-r from-yellow-400 to-orange-500 text-white font-bold py-3 px-6 rounded-lg hover:from-yellow-500 hover:to-orange-600 transition-all duration-300 shadow-lg hover:shadow-xl">
                     <i class="fas fa-arrow-right mr-2"></i> Lihat Semua Produk Flash Sale
                 </a>
             </div>
@@ -114,8 +117,8 @@
     <script>
         // Configuration - Set your desired end time here (24-hour format)
         const config = {
-            endHour: 18,    // Set end hour (e.g., 16 for 4 PM)
-            endMinute: 58    // Set end minute (e.g., 30 for :30)
+            endHour: 19,    // Set end hour (e.g., 16 for 4 PM)
+            endMinute: 04    // Set end minute (e.g., 30 for :30)
         };
 
         // 3 Featured PUBG Mobile Products
@@ -214,6 +217,12 @@
                 document.querySelector('.flash-timer').innerHTML = '<span class="text-xl font-bold">FLASH SALE BERAKHIR!</span>';
                 document.getElementById('time-message').textContent = 'Flash Sale telah berakhir';
                 
+                // Change the view all button text and disable it
+                const viewAllButton = document.getElementById('view-all-button');
+                viewAllButton.textContent = 'Flash Sale Sudah Berakhir';
+                viewAllButton.classList.add('btn-disabled');
+                viewAllButton.removeAttribute('href');
+
                 // Remove pulse animation when sale ends
                 document.querySelectorAll('.flash-pulse').forEach(el => {
                     el.style.animation = 'none';
